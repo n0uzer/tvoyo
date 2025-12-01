@@ -1,5 +1,5 @@
 window.onscroll = function () {
-    const element = document.querySelector(".submenu");
+    const submenu = document.querySelector(".submenu");
     const header = document.querySelector("header");
 
     if (window.pageYOffset > 300) {
@@ -9,17 +9,16 @@ window.onscroll = function () {
     }
 
     if (window.pageYOffset > 200) {
-        element.style.display = "none";
+        submenu.style.display = "none";
     } else {
-        element.style.display = "block";
+        submenu.style.display = "block";
     }
 };
 function updateTimer() {
     const now = new Date();
-    // console.log(now);
 
     const currentYear = now.getFullYear();
-    // console.log(currentYear);
+    
     const newYear = new Date(`January 1, 2026 00:00:00`);
 
     const diff = newYear - now;

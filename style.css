@@ -232,6 +232,11 @@ header.scrolled input[type="text"] {
     font-size: 34px;
     display: flex;
     justify-content: center;
+    margin-bottom:50px ;
+}
+.products{
+    width: 100%;
+    display: flex;
 }
 
 .xiti-container * {
@@ -249,7 +254,10 @@ header.scrolled input[type="text"] {
 .xiti0 {
     margin-right: 30px;
 }
-
+.xiti0,.xiti1,.xiti2{
+    cursor: pointer;
+    text-transform: uppercase;
+}
 .xiti1 {
     margin: 0 30px;
 }
@@ -266,6 +274,7 @@ header.scrolled input[type="text"] {
     flex-direction: column;
     padding: 0 6px;
     gap: 6px;
+    cursor: pointer;
 }
 
 .cart-text * {
@@ -303,14 +312,272 @@ header.scrolled input[type="text"] {
 }
 
 .watch-hiti button {
-    color: #000000;
+    cursor: pointer;
+    padding: 16px 16px 13px;
+    background: none;
+    border-radius: 3px;
+    border:  1px solid gray;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+.watch-hiti a button {
+    color: #000000 !important;
+}
+
+.app{
+    width: 100%;
+    height: 370px;
+    background-color: #ff0000;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    overflow: visible;
+
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: start;
+}
+.left h3{
+    font-size: 34px;
+}
+.left span{
+    font-size: 22px;
+}
+.stores{
+    display: flex;
+    gap: 30px;
+}
+.middle{
+    overflow: visible;
+}
+.middle img{
+    width: 327px;
+    height: 369px;
+}
+.right{
+    display: flex;
+    padding: 50px 0 0;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 17px;
+}
+.right span{
+    max-width: 250px;
+}
+.qr{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    width: max-content;
+    height: max-content;
+}
+.qr img{
+    height: 139px;
+    width: 139px;
+}
+.categori{
+    display: flex;
+    width: 100%;
+    height: 405px;
+    margin-top: 20px;
+}
+
+.categori-photo{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.categori-photo .text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.categori-photo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.club {
+    width: 100%;
+    height: auto;
+    margin-top:15px ;
+}
+
+.club img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.bonusi{
+    width: 100%;
+    height: fit-content;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bonusi .spans {
+    display: flex;
+    gap:20px;
+    padding: 43px 0;
+}
+.bonusi .spans *{
+    color: #000000 !important; 
+}
+
+.bonusi button{
+    background-color: #000000;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    padding: 18px 45px;
+}
+.spans .jir{
+    font-weight: 700;
 }
 
 /* FOOTER */
 footer {
-    display: none;
+    margin-top: 30px;
+    position: relative;
+    padding: 50px 40px 20px 40px;
+    border-top: 1px solid rgba(134, 134, 134,.3) ;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top:20px ;
+}
+footer *{
+    color: #000000;
+}
+footer span{
+    color: #1d1d1d;
+    box-sizing: inherit;
+    font-family: Helvetica Neue Condensed,BlinkMacSystemFont,-apple-system,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Arial,sans-serif;
+    font-size: 20px;
+    letter-spacing: .2px;
+    line-height: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+}
+footer main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:
+    "block1 block2 block3 block4"
+    "block1 block2 block3 block5";
+}
+.compani{
+    grid-area: block1;
+}
+.help{
+    grid-area: block2;
+}
+.seti{
+    grid-area: block3;
+}
+.trend{
+    grid-area: block4;
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.trend button{
+    font-family: Helvetica Neue,BlinkMacSystemFont,-apple-system,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Arial,sans-serif;
+    border: 0;
+    cursor: pointer;
+    background-color: #00c2a9;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 16px 16px 13px;
+    height: 37px;
+    font-size: 15px;
+}
+.trend button:hover{
+    background: #00e6c7;
+
+}
+.myapp{
+    grid-area: block5;
+
+}
+.storesApp{
+    display: flex;
+    margin-top: 20px;
+}
+.phone-number{
+    box-sizing: inherit;
+    cursor: pointer;
+    font-family: Helvetica Neue Condensed,BlinkMacSystemFont,-apple-system,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 30px;
 }
 
+.storesApp img{
+    width: 150px;
+    height: 50px;
+    object-fit: contain; 
+}
+
+.grafic{
+
+    color: #1d1d1d;
+    font-family: Helvetica Neue,BlinkMacSystemFont,-apple-system,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Arial,sans-serif;
+    box-sizing: inherit;
+    font-size: 14px;
+    letter-spacing: .2px;
+    line-height: 20px;
+    display: block;
+    margin: 8px 0 0;
+    font-weight: 300;
+}
+
+.cart{
+    width: 100%;
+    display: flex;
+    gap: 70px;
+}
+
+.cart img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain; /* вписывает изображение полностью */
+}
+.botton{
+    position: absolute;
+    bottom: 30px;
+
+}
+.botton *{
+    color: #1d1d1d;
+    font-family: Helvetica Neue,BlinkMacSystemFont,-apple-system,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Arial,sans-serif;
+    box-sizing: inherit;
+    font-size: 14px;
+    position: relative;
+    opacity: .6;
+    padding-right: 25px;
+}
 /* LINKS */
 a {
     cursor: pointer;
