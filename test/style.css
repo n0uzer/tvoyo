@@ -12,7 +12,7 @@ body {
         Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Arial, sans-serif;
 }
 
-
+/* HEADER STYLES */
 header {
     width: 100%;
     height: 100px;
@@ -53,8 +53,6 @@ header {
 }
 .alla{
     display: flex;
-    gap: 10px;
-    align-items: end;
 }
 .gender {
     display: flex;
@@ -105,7 +103,7 @@ header i {
     font-size: 23px;
 }
 
-
+/* Scrolled header styles */
 header.scrolled {
     background: white !important;
 }
@@ -126,7 +124,7 @@ header.scrolled input[type="text"] {
     border-bottom-color: black !important;
 }
 
-
+/* BANNER STYLES */
 .banner {
     width: 100%;
     background-repeat: no-repeat;
@@ -147,7 +145,7 @@ header.scrolled input[type="text"] {
     display: block;
 }
 
-
+/* SUBMENU */
 .submenu {
     font-size: 29px;
     position: fixed;
@@ -170,7 +168,7 @@ header.scrolled input[type="text"] {
     margin-top: 30px;
 }
 
-
+/* MARQUEE */
 .animate-spans {
     display: flex;
     position: absolute;
@@ -200,7 +198,7 @@ header.scrolled input[type="text"] {
     }
 }
 
-
+/* TIMER */
 .timer-container {
     width: 100%;
     height: 160px;
@@ -230,7 +228,7 @@ header.scrolled input[type="text"] {
     justify-content: space-around;
 }
 
-
+/* PRODUCTS */
 .xiti-container {
     width: 100%;
     font-size: 34px;
@@ -270,7 +268,7 @@ header.scrolled input[type="text"] {
     margin-left: 30px;
 }
 
-
+/* PRODUCT CARDS */
 .cart1 {
     display: flex;
     width: 224px;
@@ -307,7 +305,7 @@ header.scrolled input[type="text"] {
     width: 180px;
 }
 
-
+/* WATCH HITS BUTTON */
 .watch-hiti {
     width: 100%;
     display: flex;
@@ -345,7 +343,9 @@ header.scrolled input[type="text"] {
     justify-content: center;
     gap: 20px;
     align-items: start;
-    
+    /* position: absolute;
+    left: 20%;
+    bottom: 100px; */
 }
 .left h3{
     font-size: 34px;
@@ -367,13 +367,13 @@ header.scrolled input[type="text"] {
     height: 369px;
 }
 .right{
-    
+    /* position: absolute; */
     display: flex;
     padding: 50px 0 0;
     justify-content: flex-start;
     flex-direction: column;
     font-size: 17px;
-    
+    /* right: 25%; */
 }
 .right span{
     max-width: 250px;
@@ -454,17 +454,8 @@ header.scrolled input[type="text"] {
     gap:20px;
     padding: 43px 0;
 }
-.big-img{
-    height: 41px;
-    width: 41px;
-    object-fit: contain;
-}
 .bonusi .spans *{
     color: #000000 !important; 
-}
-.actii{
-    display: flex;
-    align-items: center;
 }
 
 .bonusi button{
@@ -474,17 +465,11 @@ header.scrolled input[type="text"] {
     border-radius: 3px;
     padding: 18px 45px;
 }
-.bonusi button img{
-    height: 15px;
-    width: 15px;
-    object-fit: contain;
-    margin-left: 2px;
-}
 .spans .jir{
     font-weight: 700;
 }
 
-
+/* FOOTER */
 footer {
     margin-top: 30px;
     position: relative;
@@ -602,7 +587,7 @@ footer main{
 .cart img{
     width: 50px;
     height: 50px;
-    object-fit: contain; 
+    object-fit: contain; /* вписывает изображение полностью */
 }
 .botton{
     position: absolute;
@@ -618,7 +603,7 @@ footer main{
     opacity: .6;
     padding-right: 25px;
 }
-
+/* LINKS */
 a {
     cursor: pointer;
     color: white;
@@ -631,258 +616,4 @@ ul {
 
 h1 {
     text-transform: uppercase;
-}
-
-
-@media screen and (max-width: 768px) {
-    header {
-        height: 60px;
-    }
-
-    .main-header-div {
-        width: 100%;
-        padding: 0 15px;
-    }
-
-    .header-left {
-        width: auto;
-        gap: 10px;
-    }
-
-    .header-left a {
-        font-size: 12px;
-    }
-
-    .gender {
-        gap: 10px;
-    }
-
-    header img {
-        height: 30px;
-        width: 85px;
-    }
-
-    .header-right {
-        width: auto;
-    }
-
-    header input[type="text"] {
-        display: none;
-    }
-
-    header i {
-        font-size: 18px;
-    }
-
-    .submenu {
-        display: none;
-    }
-
-    .animate-spans {
-        font-size: 14px;
-        height: 30px;
-        bottom: 10px;
-    }
-
-    .timer-container {
-        height: 120px;
-    }
-
-    .timer {
-        width: 280px;
-        height: 60px;
-        font-size: 24px;
-    }
-
-    .ostalos {
-        font-size: 10px;
-    }
-
-    .xiti-container {
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-
-    .xiti0, .xiti1, .xiti2 {
-        font-size: 20px;
-    }
-
-    .xiti0 {
-        margin-right: 15px;
-    }
-
-    .xiti1 {
-        margin: 0 15px;
-    }
-
-    .xiti2 {
-        margin-left: 15px;
-    }
-
-    .cart {
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-    }
-
-    .cart1 {
-        width: 45%;
-        height: auto;
-    }
-
-    .watch-hiti button {
-        font-size: 13px;
-        padding: 12px;
-        margin-top: 20px;
-    }
-
-    .app {
-        height: auto;
-        flex-direction: column;
-        padding: 30px 20px;
-        margin-top: 50px;
-    }
-
-    .left {
-        align-items: center;
-        text-align: center;
-    }
-
-    .left h3 {
-        font-size: 24px;
-    }
-
-    .left span {
-        font-size: 16px;
-    }
-
-    .stores {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .stores img {
-        width: 120px;
-    }
-
-    .middle {
-        position: relative;
-        bottom: auto;
-        margin: 20px 0;
-    }
-
-    .middle img {
-        width: 200px;
-        height: 225px;
-    }
-
-    .right {
-        align-items: center;
-        padding: 0;
-    }
-
-    .right span {
-        text-align: center;
-    }
-
-    .qr img {
-        height: 100px;
-        width: 100px;
-    }
-
-    .categori {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .categori-photo {
-        width: 100%;
-        height: 300px;
-    }
-
-    .categori-photo .text h2 {
-        font-size: 32px;
-    }
-
-    .categori-photo .text a {
-        font-size: 16px;
-    }
-
-    .club img {
-        height: 60px;
-    }
-
-    .bonusi .spans {
-        flex-direction: column;
-        gap: 10px;
-        padding: 30px 20px;
-        text-align: center;
-    }
-
-    .bonusi button {
-        padding: 12px 30px;
-        font-size: 13px;
-    }
-
-    footer {
-        padding: 30px 20px;
-    }
-
-    footer main {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "block1"
-            "block2"
-            "block3"
-            "block4"
-            "block5";
-        gap: 30px;
-    }
-
-    .trend {
-        width: 100%;
-    }
-
-    footer span {
-        font-size: 16px;
-    }
-
-    .storesApp {
-        flex-wrap: wrap;
-    }
-
-    .storesApp img {
-        width: 120px;
-        height: 40px;
-    }
-
-    .botton {
-        position: relative;
-        bottom: auto;
-        margin-top: 20px;
-    }
-
-    .botton * {
-        font-size: 12px;
-        padding-right: 15px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .cart1 {
-        width: 100%;
-    }
-
-    .xiti-container {
-        font-size: 16px;
-    }
-
-    .left h3 {
-        font-size: 20px;
-    }
-
-    .categori-photo .text h2 {
-        font-size: 24px;
-    }
 }

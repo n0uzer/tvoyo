@@ -14,7 +14,6 @@ window.onscroll = function () {
         submenu.style.display = "block";
     }
 };
-
 function updateTimer() {
     const now = new Date();
 
@@ -52,16 +51,7 @@ document.body.addEventListener('click', (e) => {
         e.target.className = 'bi bi-heart';
     }
 });
-
 if(history.scrollRestoration) {
     history.scrollRestoration = 'manual';
 }
-
-const banner = [
-    'img/novogodnyaya-kollekciya_d_20251126144107.webp',
-    'img/novogodnee-volshebstvo_d_20251203140653.webp',
-    'img/novaya-kollekciya_d_20251117075631.webp',
-    'img/dostupno-v-magazinah-v-tvoem-gorode_d_20251117073338.webp',
-    'img/rasprodazha-skidki-do-80_d_20251107105618.webp'
-];
 
